@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/countdown.css">
     <title>GRADUATION-PROJECT</title>
 </head>
 
@@ -39,9 +40,9 @@
             </ul>
         </nav>
     </header>
-    <section class="about">
+    <section class="about container">
 
-        <div class="section_title container">
+        <div class="section_style">
             <h2>about party</h2>
             <h3>graduation day</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus aliquam dolorum nisi! Sint officia quis voluptatibus. Dicta, error cupiditate.</p>
@@ -60,7 +61,7 @@
 
 
     </section>
-    <section class="counter">
+    <!-- <section class="counter">
         <ul>
             <li>
                 <span>day</span>
@@ -79,44 +80,47 @@
                 <p>seconds</p>
             </li>
         </ul>
-    </section>
+    </section> -->
+
+    <div id="countdown"></div>
+
     <section class="service">
-        <h3>service</h3>
-        <ul>
-            <li>
-                <a href="">
 
-                    <h4>powercoders</h4>
-                </a>
-                <p></p>
-            </li>
-            <li>
-                <a href="">
-                    <img src="" alt="">
-                    <h4>our class</h4>
-                </a>
-                <p></p>
-            </li>
-            <li>
-                <a href="">
-                    <img src="" alt="">
-                    <h4>party location infos</h4>
-                </a>
-                <p></p>
-            </li>
-            <li>
-                <a href="">
-                    <img src="" alt="">
-                    <h4>graduation-day</h4>
-                </a>
-                <p></p>
-            </li>
-        </ul>
+        <h2 id="title">service</h2>
+        <div class="timeline">
+            <label>1</label>
+            <h4>Welcome</h4>
+            <img src="img/party.jpg" alt="">
+            <h5>Arrival : &nbsp;&nbsp;&nbsp; 17:00 - 17:30</h5>
+            <p>some text .....</p>
+        </div>
+        <div class="timeline">
+            <label>2</label>
+            <h4>Welcome</h4>
+            <img src="img/party.jpg" alt="">
+            <h5>Arrival : &nbsp;&nbsp;&nbsp; 17:00 - 17:30</h5>
+            <p>some text .....</p>
+        </div>
+        <div class="timeline">
+            <label>3</label>
+            <h4>Welcome</h4>
+            <img src="img/party.jpg" alt="">
+            <h5>Arrival : &nbsp;&nbsp;&nbsp; 17:00 - 17:30</h5>
+            <p>some text .....</p>
+        </div>
+        <div class="timeline">
+            <label>4</label>
+            <h4>Welcome</h4>
+            <img src="img/party.jpg" alt="">
+            <h5>Arrival : &nbsp;&nbsp;&nbsp; 17:00 - 17:30</h5>
+            <p>some text .....</p>
+        </div>
     </section>
+    <section>
 
-
-
-
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/countdown.jquery.js" defer></script>
     <script src="js/script.js"></script>
 </body>
 

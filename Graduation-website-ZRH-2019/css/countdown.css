@@ -1,0 +1,45 @@
+.wrapper {
+    text-align: center;
+    display: inline-grid;
+}
+
+.time {
+    color: #111111;
+    font-size: 6em;
+    padding: 30px;
+}
+
+
+/* .bg .label {
+    font-size: 2em;
+    display: block;
+    color: #aaa;
+    padding: 30px;
+} */
+
+
+/* .bg {
+    /* height: 100vh; */
+
+
+/* background-color: rgba(0, 0, 0, 0.75); */
+
+#countdown {
+    line-height: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#countdown .col-xs-6.col-sm-3 {
+    /* display: inline-flex; */
+}
+
+#days {}
+
+#hours {}
+
+#minutes {}
+
+#second {}

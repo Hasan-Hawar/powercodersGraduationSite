@@ -2,9 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     position: relative;
     background-color: #f4f4f4;
+    /* background: linear-gradient(22deg, rgba(111, 0, 255, 0.7287115529805672) 0%, rgba(134, 80, 4, 0.8351541300113796) 13%, rgba(43, 39, 94, 0.8547619731486344) 71%); */
     text-align: center;
     line-height: 32px;
-    max-width: 100%;
+    width: 100%;
 }
 
 h1,
@@ -13,7 +14,8 @@ h3,
 h4,
 h5,
 h6 {
-    color: #333333;
+    text-transform: uppercase;
+    color: #111111;
 }
 
 .container {
@@ -23,7 +25,9 @@ h6 {
 }
 
 section {
+    text-align: center;
     padding: 90px 0;
+    margin: 0 auto;
 }
 
 .section_title {
@@ -47,26 +51,20 @@ header nav i:hover {
 }
 
 header {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    margin: auto;
+    /* background-color: #373333; */
 }
 
 header nav {
-    max-width: 100%;
-    background-color: #373333;
-    text-align: center;
+    max-width: 1200px;
+    text-align: left;
+    margin: 0 auto;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
     float: right;
-    margin: 0 auto;
     margin-top: 15px;
-    margin-right: 250px;
 }
 
 header nav ul i {
@@ -75,7 +73,6 @@ header nav ul i {
 }
 
 header nav ul li {
-    display: flex;
     padding: 0 25px;
 }
 
@@ -85,32 +82,36 @@ header nav ul li a {
     padding: 5px 0;
     position: relative;
     display: block;
+    transition: 0.4s all ease;
 }
 
 header nav ul li:hover a {
-    border-bottom: 1px solid #BB0C2B;
     color: #BB0C2B;
-    transition: 0.4s all ease;
-    animation: timer .3s ease 1;
 }
 
-@keyframes timer {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: calc(100% - 5px);
-    }
+header nav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #BB0C2B;
+    transition: 0.4s all ease;
+}
+
+header nav ul li:hover a:after {
+    width: 100%;
 }
 
 
 /* ------------- About section ------------------ */
 
-.about .section_title {
+.about .section_style {
     text-align: center;
     display: grid;
     grid-template-rows: 150px 60px 225px 50px;
-    grid-template-columns: 600px 100px;
+    grid-template-columns: 700px 100px;
 }
 
 .about h2 {
@@ -118,7 +119,6 @@ header nav ul li:hover a {
     grid-row-end: 1;
     grid-column-start: 1;
     grid-column-end: 4;
-    text-transform: uppercase;
 }
 
 .about h3 {
@@ -126,12 +126,11 @@ header nav ul li:hover a {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 1;
-    text-transform: uppercase;
 }
 
 .about img {
-    width: 500px;
-    border-radius: 5px;
+    max-width: 500px;
+    border-radius: 8px;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
@@ -171,8 +170,8 @@ path {
 
 .counter {
     max-width: 100%;
-    max-height: 125px;
-    background: #373333;
+    max-height: 150px;
+    background: #111111;
     padding: 0;
 }
 
@@ -213,4 +212,60 @@ path {
     font-size: 20px;
     font-weight: 600;
     font-size: 14px;
+}
+
+
+/*-------------------------- schedule section ---------------------- */
+
+.service {
+    position: relative;
+    max-width: 1200px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 150px auto auto auto;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.service div {
+    padding: 10px;
+    border: 2px solid #b4b4b4;
+    border-radius: 25px;
+    background-color: #d4d4d4;
+    margin-inline: 10px;
+}
+
+.service div:hover {
+    padding: 10px;
+    border: 2px solid #d4d4d4;
+    border-radius: 25px;
+    background-color: #E4e4e4;
+    margin-inline: 10px;
+    box-shadow: 0 8px 12px 0 rgba(180, 154, 154, 0.2)
+}
+
+.service #title {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.service .timeline {
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.service .timeline img {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.service .timeline label {
+    border: 1px solid #333333;
+    border-radius: 50%;
+    width: 32px;
+    display: inline-block;
 }
